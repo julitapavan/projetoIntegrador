@@ -28,24 +28,3 @@ ProTrader é uma plataforma web interativa voltada para traders e investidores i
 
     Scraping – Coleta de dados em tempo real via JS
     
-📁 Estrutura do Projeto
-
-    ProTrader/
-    │
-    ├── index.html              # Página inicial com busca
-    ├── sobre.html              # Informações sobre a equipe e a proposta
-    ├── contato.html            # Formulário de contato
-    ├── cadastro/               # Formulário de cadastro
-    │   └── cadastro.html
-    ├── login/                  # Tela de login
-    │   └── login.html
-    ├── dashboard.html          # Painel com indicadores
-    ├── transacoes.html         # Tela de transações e histórico
-    ├── noticias.html           # Feed de notícias financeiras
-    ├── calendario.html         # Calendário econômico
-    ├── personalizar.html       # Tela de personalização de interface
-    ├── css/
-    │   └── index.css           # Estilo customizado
-    ├── js/
-    │   └── resultado.js        # Script da busca e scraping
-    └── assets/                 # Imagens, ícones e arquivos estáticos
