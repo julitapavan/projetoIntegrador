@@ -1,0 +1,119 @@
+/* Container do calendário mais bonito */
+#calendar {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.1);
+    border-color: #000000;
+    border-style:groove;
+    margin: 40px auto;
+    max-width: 1100px;
+}
+
+/* Header mais próximo do Google Agenda */
+.fc-header-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(126, 212, 255);
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+/* Alinhar botões de navegação à direita */
+.fc-header-toolbar .fc-right {
+    order: 3;
+    display: flex;
+    gap: 8px;
+}
+
+/* Estilizando os botões */
+.fc-button {
+    background-color: #f6f6f6 !important;
+    border: none !important;
+    color: #02002b !important;
+    padding: 8px 14px;
+    border-radius: 6px !important;
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: background-color 0.3s ease;
+}
+
+.fc-button:hover,
+.fc-button:focus {
+    background-color: #155ab6 !important;
+    outline: none;
+}
+
+/* Estilo dos botões de título, hoje, mês/semana/dia */
+.fc-button-group .fc-button {
+    margin: 0 2px;
+}
+
+/* Botão de adicionar evento (fora do FullCalendar) */
+#addEventBtn {
+    background-color: #34a853;
+    border: none;
+    color: #fff;
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    float: right;
+    margin: 10px 20px 0 0;
+}
+
+#addEventBtn:hover {
+    background-color: #2c8e47;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  #calendar {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .fc-toolbar-title {
+    font-size: 1.3rem;
+  }
+
+  .fc-button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .fc-header-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+  }
+
+  .fc-header-toolbar .fc-left,
+  .fc-header-toolbar .fc-right,
+  .fc-header-toolbar .fc-center {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .fc-button {
+    padding: 6px 10px !important;
+    font-size: 12px !important;
+    border-radius: 5px !important;
+  }
+
+  #addEventBtn {
+    padding: 8px 12px;
+    font-size: 12px;
+    margin: 10px auto;
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
